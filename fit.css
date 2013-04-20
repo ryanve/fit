@@ -1,7 +1,7 @@
 /*!
  * fit.css   base responsive styles for HTML5 elements
  * @author   Ryan Van Etten
- * @version  2013.04.19
+ * @version  2013.04.20
  * @link     css3base.com
  * @license  CC0
  */
@@ -33,11 +33,15 @@ input, textarea, progress, meter, datalist, output { max-width:100% }
 /* Contain elems that have (CMS-generated) inline styles */
 [style] { max-width:100% }
 
-/* Video helper classes based on bit.ly/ratios-for-video
- * <div class="rwd-wrap-4:3"><iframe width="640" height="480" ...></iframe></div>
- * <div class="rwd-wrap-16:9"><iframe width="1280" height="720" ...></iframe></div>
- */
-.rwd-wrap-16\:9,.rwd-wrap-4\:3 { position:relative }
-.rwd-wrap-16\:9 { padding:56.25% 0 0 0 }
-.rwd-wrap-4\:3 { padding:75% 0 0 0 }
-.rwd-wrap-16\:9>*, .rwd-wrap-4\:3>* { position:absolute; left:0; top:0; height:100% }
+/* 
+ * =helper for maintaining YouTube/Vimeo iframe aspect ratio
+ * github.com/ryanve/fit/issues/1
+ * <div data-fit-ratio="16:9"><iframe src="..." width="640" height="360"></iframe></div>
+ */ 
+[data-fit-ratio] { position:relative; }
+[data-fit-ratio="4:3"] { padding: 75% 0 0 0; }
+[data-fit-ratio="16:9"] { padding: 56.25% 0 0 0; }
+[data-fit-ratio] > * {
+    position:absolute; left:0; top:0;
+    height:100%; margin:0; padding:0; border:0; 
+}
