@@ -5,12 +5,8 @@
  * @license MIT
  */
 
-/* Prepare =body for fluid design. */ 
-body {
-  margin: auto; /* horizontal centering */
-  max-width: 100%; /* often cascaded to em|px */
-  word-wrap: break-word; /* allow text to wrap */
-}
+/* Allow text to wrap */
+body { word-wrap: break-word }
 
 /* Keep =media flush to its container (h5bp.com/i/440) */
 img, audio, video, canvas, iframe, object, embed { vertical-align:middle }
@@ -25,9 +21,9 @@ iframe, object, embed, input, textarea, progress, meter, datalist, output { max-
 img, audio, video, canvas { max-width:100%; height:auto }
 
 /* 
- * Prevent IE8 height distortion. IE7 is fine. 
- * stackoverflow.com/a/8831173/770127 
- * browserhacks.com/#ie 
+ * Prevent IE8 height distortion.
+ * http://stackoverflow.com/a/8831173/770127 
+ * http://browserhacks.com/#ie 
  */
 @media \0screen {
   img { width:auto }
@@ -38,7 +34,7 @@ img, audio, video, canvas { max-width:100%; height:auto }
 .yconfine { overflow-y:hidden }
 
 /* 
- * Maintain YouTube/Vimeo (iframe|object|embed) aspect ratio
+ * Maintain YouTube/Vimeo iframe|object|embed aspect ratio
  * http://github.com/ryanve/fit/issues/1
  * <div data-fit-ratio="16:9"><iframe src width="640" height="360"></iframe></div>
  */ 
