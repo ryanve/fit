@@ -1,5 +1,4 @@
-[fit](https://github.com/ryanve/fit)
-===
+# fit.css
 
 Base responsive CSS for HTML5 elements
 
