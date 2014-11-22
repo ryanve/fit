@@ -6,7 +6,7 @@
  */
 
 /* Allow text to wrap */
-body { word-wrap: break-word }
+body { word-wrap:break-word }
 
 /* Keep =media flush to its container (h5bp.com/i/440) */
 img, audio, video, canvas, iframe, object, embed { vertical-align:middle }
@@ -39,6 +39,6 @@ img, audio, video, canvas { max-width:100%; height:auto }
  * <div data-fit-ratio="16:9"><iframe src width="640" height="360"></iframe></div>
  */ 
 [data-fit-ratio] { position:relative }
-[data-fit-ratio="4:3"] { padding: 75% 0 0 0 }
-[data-fit-ratio="16:9"] { padding: 56.25% 0 0 0 }
+[data-fit-ratio="4:3"] { padding:75% 0 0 0 }
+[data-fit-ratio="16:9"] { padding:56.25% 0 0 0 }
 [data-fit-ratio] * { position:absolute; left:0; top:0; height:100%; margin:0; padding:0; border:0 }
